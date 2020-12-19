@@ -2,8 +2,9 @@
   --main-text-color: #212121;
   --sec-text-color: #ffffff;
   --descrip-text-color: #757575;
-  --team-backgroundcolor: #f5f4fa;
+  --header-border-bottom: #ececec;
 
+  --team-backgroundcolor: #f5f4fa;
   --main-backgroundcolor: #ffffff;
   --sec-backgroundcolor: #2196f3;
   --hero-backgroundcolor: #2f303a;
@@ -12,6 +13,7 @@
 a {
   text-decoration: none;
   color: var(--descrip-text-color);
+  display: block;
 }
 
 .team img {
@@ -46,7 +48,7 @@ ul {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -72,6 +74,7 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  border-bottom: 1px solid var(--header-border-bottom);
 }
 
 .container > nav {
@@ -205,6 +208,7 @@ button {
 .buttons-list {
   display: flex;
   justify-content: center;
+  margin-top: 94px;
   margin-bottom: 50px;
 
   /* flex-wrap: wrap; */
@@ -233,17 +237,15 @@ button {
 }
 
 .sec-title {
+  margin-top: 94px;
+  text-align: center;
+  margin-bottom: 50px;
+
   text-align: center;
   color: var(--main-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-}
-
-.sec-title-name {
-  margin-top: 94px;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .job {
@@ -258,11 +260,11 @@ button {
 .job-kind {
   margin-right: 30px;
   margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
-.job-kind:nth-child(n + 1) {
-  margin-right: 10px;
+.job-kind:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* .job-kind:first-child {
@@ -354,6 +356,24 @@ button {
 .description-team {
   color: var(--descrip-text-color);
   margin-bottom: 124px;
+  text-align: center;
+}
+
+.our-job {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.our-job-descr {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.identification {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 footer {
@@ -368,7 +388,7 @@ footer {
 }
 
 .logo-footer {
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -394,7 +414,7 @@ footer {
 }
 
 .telephone-footer {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .mail-footer,
