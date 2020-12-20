@@ -199,6 +199,8 @@ button {
 }
 
 .button-text {
+  background-color: var(--team-backgroundcolor);
+
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -218,9 +220,17 @@ button {
   margin-right: 8px;
 }
 
+.but-active {
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
 .but-active:hover,
 .but-active:focus {
   background-color: var(--sec-backgroundcolor);
+
+  border: 2px solid var(--sec-backgroundcolor);
+  border-radius: 4px;
 }
 
 .button-text-p {
@@ -237,7 +247,7 @@ button {
 }
 
 .sec-title {
-  margin-top: 94px;
+  padding-top: 94px;
   text-align: center;
   margin-bottom: 50px;
 
@@ -258,7 +268,9 @@ button {
 }
 
 .job-kind {
-  margin-right: 30px;
+  border: 1px solid #eeeeee;
+
+  margin-right: 25px;
   margin-bottom: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
@@ -266,10 +278,6 @@ button {
 .job-kind:nth-child(3n) {
   margin-right: 0;
 }
-
-/* .job-kind:first-child {
-  margin-right: 30px;
-} */
 
 .job-kind .container > description-item {
   display: flex;
@@ -333,7 +341,7 @@ button {
 }
 
 .team {
-  background-color: var(--team-backgrougcolor);
+  background-color: var(--team-backgroundcolor);
 }
 
 .team-ul {
@@ -361,19 +369,34 @@ button {
 
 .our-job {
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-left: 24px;
 }
 
-.our-job-descr {
+.poster-name {
+  padding-bottom: 4px;
+
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.poster-name-descr {
   text-align: left;
   margin-bottom: 20px;
 }
 
-.identification {
+.our-team {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   text-align: center;
+}
+
+.identification {
+  margin-bottom: 10px;
 }
 
 footer {
