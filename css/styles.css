@@ -14,6 +14,8 @@ a {
   text-decoration: none;
   color: var(--descrip-text-color);
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team img {
@@ -223,6 +225,8 @@ button {
 .but-active {
   border: 2px solid transparent;
   border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .but-active:hover,
@@ -249,7 +253,7 @@ button {
 .sec-title {
   padding-top: 94px;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 
   text-align: center;
   color: var(--main-text-color);
@@ -271,7 +275,6 @@ button {
   border: 1px solid #eeeeee;
 
   margin-right: 25px;
-  margin-bottom: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
@@ -336,7 +339,7 @@ button {
 
 .img-item {
   padding: 10px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   flex-basis: calc(100% / 3 - 30px);
 }
 
@@ -363,7 +366,7 @@ button {
 
 .description-team {
   color: var(--descrip-text-color);
-  margin-bottom: 124px;
+  padding-bottom: 124px;
   text-align: center;
 }
 
@@ -386,17 +389,17 @@ button {
 
 .poster-name-descr {
   text-align: left;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .our-team {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
 .identification {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 footer {
@@ -412,7 +415,7 @@ footer {
 
 .logo-footer {
   padding-top: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .studio-logo-footer {
@@ -422,8 +425,7 @@ footer {
 }
 
 .address {
-  margin-top: 20px;
-  margin-bottom: 9px;
+  padding-bottom: 9px;
 
   color: var(--sec-text-color);
   font-style: normal;
@@ -433,11 +435,13 @@ footer {
 }
 
 .mail-footer {
-  margin-bottom: 9px;
+  padding-top: 0px;
+  padding-bottom: 9px;
 }
 
 .telephone-footer {
-  padding-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 9px;
 }
 
 .mail-footer,
