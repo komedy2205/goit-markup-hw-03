@@ -87,8 +87,6 @@ header {
 .nav-links {
   display: block;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .item:not(:last-child) {
@@ -98,8 +96,6 @@ header {
 .mail-links {
   display: block;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
 }
 
@@ -168,9 +164,13 @@ header {
   margin: -1px;
 }
 
+.hero {
+  background-size: 1600px 600px;
+}
+
 .first-title {
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-top: 200px;
+  margin-bottom: 30px;
   text-align: center;
 
   color: var(--main-backgroundcolor);
