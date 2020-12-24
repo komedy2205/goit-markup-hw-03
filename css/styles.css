@@ -18,13 +18,14 @@ a {
   padding-bottom: 32px;
 }
 
-.team img {
-  width: 270px;
-  height: 260px;
-}
-
 li {
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -165,11 +166,16 @@ header {
 }
 
 .hero {
-  background-size: 1600px 600px;
+  padding-top: 200px;
+}
+
+.big-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .first-title {
-  margin-top: 200px;
   margin-bottom: 30px;
   text-align: center;
 
@@ -212,6 +218,7 @@ button {
 .buttons-list {
   display: flex;
   justify-content: center;
+
   margin-top: 94px;
   margin-bottom: 50px;
 
@@ -232,28 +239,24 @@ button {
 .but-active:hover,
 .but-active:focus {
   background-color: var(--sec-backgroundcolor);
+  color: var(--main-backgroundcolor);
 
   border: 2px solid var(--sec-backgroundcolor);
   border-radius: 4px;
-}
-
-.button-text-p {
-  color: var(--main-text-color);
-}
-
-.button-text-p:hover,
-.button-text-p:focus {
-  color: var(--sec-text-color);
 }
 
 .button-text {
   color: var(--sec-text-color);
 }
 
-.sec-title {
+.what-doing {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.sec-title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   text-align: center;
   color: var(--main-text-color);
@@ -265,7 +268,6 @@ button {
 .job {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 83px;
   margin-left: 0px;
   padding: 0;
   list-style: none;
@@ -275,7 +277,13 @@ button {
   border: 1px solid #eeeeee;
 
   margin-right: 25px;
+  margin-bottom: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.job-kind > a {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .job-kind:nth-child(3n) {
@@ -286,13 +294,16 @@ button {
   display: flex;
 }
 
+.last {
+  margin-bottom: 94px;
+}
+
 .our-description {
-  margin-top: 83px;
-  margin-bottom: 105px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-description-li {
-  padding: 10px;
   margin-right: 30px;
   flex-basis: calc(100% / 4 - 30px);
   background-color: var(--main-backgroundcolor);
@@ -338,13 +349,14 @@ button {
 }
 
 .img-item {
-  padding: 10px;
-  padding-bottom: 94px;
+  margin: 0 10px;
   flex-basis: calc(100% / 3 - 30px);
 }
 
 .team {
   background-color: var(--team-backgroundcolor);
+
+  padding-top: 94px;
 }
 
 .team-ul {
@@ -357,16 +369,14 @@ button {
 }
 
 .team-li {
-  flex-basis: calc(100% / 4 - 30px);
-}
+  flex-basis: calc(100% / 4 - 10px);
 
-.team-li:not(:last-child) {
   padding-right: 30px;
+  margin-bottom: 94px;
 }
 
 .description-team {
   color: var(--descrip-text-color);
-  padding-bottom: 124px;
   text-align: center;
 }
 
@@ -377,8 +387,6 @@ button {
 }
 
 .poster-name {
-  padding-bottom: 4px;
-
   color: var(--main-text-color);
   font-weight: bold;
   font-size: 14px;
@@ -389,7 +397,12 @@ button {
 
 .poster-name-descr {
   text-align: left;
-  padding-bottom: 20px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.our-team > p {
+  padding-bottom: 0px;
 }
 
 .our-team {
@@ -399,11 +412,14 @@ button {
 }
 
 .identification {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
   background-color: var(--hero-backgroundcolor);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .web-footer {
@@ -414,8 +430,9 @@ footer {
 }
 
 .logo-footer {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .studio-logo-footer {
@@ -425,7 +442,8 @@ footer {
 }
 
 .address {
-  padding-bottom: 9px;
+  padding-bottom: 0;
+  margin-bottom: 9px;
 
   color: var(--sec-text-color);
   font-style: normal;
@@ -436,12 +454,14 @@ footer {
 
 .mail-footer {
   padding-top: 0px;
-  padding-bottom: 9px;
+  padding-bottom: 0;
+  margin-bottom: 9px;
 }
 
 .telephone-footer {
   padding-top: 0px;
-  padding-bottom: 9px;
+  padding-bottom: 0;
+  margin-bottom: 9px;
 }
 
 .mail-footer,
