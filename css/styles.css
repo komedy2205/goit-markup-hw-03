@@ -52,6 +52,7 @@ ul {
 
 .header .container {
   display: flex;
+  align-items: center;
 }
 
 .container {
@@ -244,8 +245,7 @@ button {
 .but-active {
   border: 2px solid transparent;
   border-radius: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 24px;
 }
 
 .but-active:hover,
@@ -397,8 +397,7 @@ button {
 
 .our-job {
   text-align: left;
-  padding-top: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
 }
 
 .poster-name {
@@ -406,15 +405,16 @@ button {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  line-height: 36px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .poster-name-descr {
+  line-height: 30px;
+
   text-align: left;
   margin-top: 4px;
-  margin-bottom: 20px;
-  margin-right: 24px;
 }
 
 .our-team > p {
