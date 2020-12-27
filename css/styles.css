@@ -141,10 +141,6 @@ header {
   color: var(--sec-backgroundcolor);
 }
 
-.nav-mail {
-  margin-left: auto;
-}
-
 .mail {
   color: var(--descrip-text-color);
 
@@ -218,6 +214,10 @@ button {
   cursor: pointer;
 }
 
+.buttons {
+  padding-bottom: 94px;
+}
+
 .button-text {
   background-color: var(--team-backgroundcolor);
 
@@ -280,6 +280,8 @@ button {
 .job {
   display: flex;
   flex-wrap: wrap;
+  width: 1200px;
+
   margin-left: 0px;
   padding: 0;
   list-style: none;
@@ -288,9 +290,8 @@ button {
 .job-kind {
   border: 1px solid #eeeeee;
 
-  margin-right: 25px;
+  margin-right: 30px;
   margin-bottom: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .job-kind > a {
@@ -307,19 +308,21 @@ button {
 }
 
 .last {
-  margin-bottom: 94px;
+  margin-bottom: 0px;
 }
 
 .our-description {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .our-description-li {
-  margin-right: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+  /* flex-basis: calc(100% / 4 - 30px); */
   background-color: var(--main-backgroundcolor);
   border-radius: 4px;
+}
+
+.our-description-li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-description p {
@@ -328,14 +331,14 @@ button {
 
 .description-item {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-  padding: 0;
+  width: 1170px;
+
   list-style: none;
 }
 
 .third-title {
+  margin-bottom: 10px;
+
   color: var(--main-text-color);
   font-weight: bold;
   font-size: 14px;
@@ -355,7 +358,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: -30px;
+  margin-bottom: 0px;
   padding: 0px;
   list-style: none;
 }
@@ -376,7 +379,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: -30px;
+  margin-bottom: 0px;
   padding: 0px;
   list-style: none;
 }
@@ -468,13 +471,15 @@ footer {
 .mail-footer {
   padding-top: 0px;
   padding-bottom: 0;
+}
+
+.mail-foot {
   margin-bottom: 9px;
 }
 
 .telephone-footer {
   padding-top: 0px;
   padding-bottom: 0;
-  margin-bottom: 9px;
 }
 
 .mail-footer,
